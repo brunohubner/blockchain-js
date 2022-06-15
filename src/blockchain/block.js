@@ -10,11 +10,10 @@ export class Block {
 
     toString() {
         return `
-            Block =
-            Timestamp = ${this.timestamp}
-            LastHash = ${this.lastHash.substring(0, 10)}
-            Hash = ${this.hash.substring(0, 10)}
-            Data = ${this.data}
+            timestamp = ${this.timestamp}
+            lastHash  = ${this.lastHash.substring(0, 10)}
+            hash      = ${this.hash.substring(0, 10)}
+            data      = ${JSON.stringify(this.data)}
         `
     }
 
