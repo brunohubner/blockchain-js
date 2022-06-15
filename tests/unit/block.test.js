@@ -1,4 +1,4 @@
-import { Block } from "../../src/block.js"
+import { Block } from "../../src/blockchain/block.js"
 
 describe("Block", () => {
     let data
@@ -6,7 +6,7 @@ describe("Block", () => {
     let block
 
     beforeEach(() => {
-        data = "data"
+        data = "blok-data"
         lastBlock = Block.genesis()
         block = Block.mine(lastBlock, data)
     })
