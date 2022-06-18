@@ -1,7 +1,7 @@
 import express from "express"
 import { middlewares } from "./middlewares.js"
 
-const server = express()
-server.use(middlewares)
+const httpServer = express()
+httpServer.use(middlewares)
 
-export { server }
+export { httpServer }
